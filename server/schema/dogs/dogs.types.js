@@ -9,7 +9,7 @@ const typeDefs = gql`
   }
 
   type Dog {
-    message: [String!]
+    message: String!
     status: String!
   }
 
