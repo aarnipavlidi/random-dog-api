@@ -7,8 +7,18 @@ const typeDefs = gql`
     message: JSONObject
     status: String!
   }
+
+  type Dog {
+    message: [String!]
+    status: String!
+  }
+
   type Query {
-    getAllBreeds: Dogs
+    getAllDogs: Dogs
+  }
+
+  type Mutation {
+    getChosenDog(name: String!): Dog
   }
 `
 
