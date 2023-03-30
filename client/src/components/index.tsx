@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 
 import Layout from './layout';
 import Dogs from './dogs';
+import Dog from './dog';
 
 import useGetAllDogs from '../hooks/useGetAllDogs';
 
@@ -14,6 +15,7 @@ const Main: React.FC = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index path="/" element={<Dogs getDogs={getDogs} dogsData={dogsData as GetAllDogsQuery} />} />
+          <Route path="/:id" element={<Dog />} />
         </Route>
       </Routes>
     </div>

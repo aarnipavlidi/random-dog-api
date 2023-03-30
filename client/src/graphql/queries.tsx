@@ -8,3 +8,17 @@ export const GET_ALL_DOGS = gql(`
     }
   }
 `);
+
+export const GET_CHOSEN_DOG = gql(`
+  query getChosenDog($breed: String!) {
+    getChosenDog(breed: $breed) {
+      message
+      status
+      data {
+        breed
+        likes
+        dislikes
+      }
+    }
+  }
+`);

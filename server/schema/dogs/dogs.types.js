@@ -22,10 +22,10 @@ const typeDefs = gql`
 
   type Query {
     getAllDogs: Dogs
+    getChosenDog(breed: String!): Dog
   }
 
   type Mutation {
-    getChosenDog(breed: String!): Dog
     giveLikesForChosenDog(breed: String!): ChosenDog
     giveDislikesForChosenDog(breed: String!): ChosenDog
   }

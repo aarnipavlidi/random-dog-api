@@ -8,7 +8,7 @@ const Navigation: React.FC = () => {
           <h1 className="font-pier-sans text-2xl">Dogs Collection</h1>
         </div>
         <ul className="basis-1/2 flex flex-row gap-5">
-          <Page label="Dogs" path="/" />
+          <Page label="Homepage" path="/" />
         </ul>
       </nav>
     </header>

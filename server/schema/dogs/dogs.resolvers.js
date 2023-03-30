@@ -18,11 +18,6 @@ const resolvers = {
         throw new Error('There was an issue fetching dogs breed data. Please try again later!');
       }
     },
-  },
-  Dogs: {
-    message: (value) => value.message || {},
-  },
-  Mutation: {
     getChosenDog: async (_, { breed }) => {
       try {
         const formatName = breed.toLowerCase();
@@ -42,6 +37,11 @@ const resolvers = {
         throw new Error('There was an issue fetching chosen dog breed data. Please try again later!');
       }
     },
+  },
+  Dogs: {
+    message: (value) => value.message || {},
+  },
+  Mutation: {
     giveLikesForChosenDog: async (_, { breed }) => {
       try {
         const formatName = breed.toLowerCase();
