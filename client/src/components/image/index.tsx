@@ -6,7 +6,7 @@ interface ImageProps {
 const Image: React.FC<ImageProps> = (props) => {
   return (
     <div className={props.wrapperStyle}>
-      <img className="max-h-150 aspect-square" src={props.imageSource} />
+      <img className="h-96 aspect-auto" src={props.imageSource} />
     </div>
   );
 };
