@@ -3,6 +3,8 @@
 /client/.env.development
 /client/.env.production
 /client/graphql.schema.json
+/client/assets/.DS_STORE
+/client/assets/fonts/.DS_STORE
 
 # Backend
 /server/node_modules

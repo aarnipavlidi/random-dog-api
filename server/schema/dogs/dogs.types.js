@@ -4,9 +4,9 @@ const typeDefs = gql`
   scalar JSONObject
 
   type ChosenDog {
-    breed: String!
-    likes: Int!
-    dislikes: Int!
+    breed: String
+    likes: Int
+    dislikes: Int
   }
 
   type Dogs {

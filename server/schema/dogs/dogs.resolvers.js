@@ -36,7 +36,7 @@ const resolvers = {
         return {
           message: randomDogImage(response.data.message),
           status: response.data.status,
-          data: getChosenDogData.data[0],
+          data: getChosenDogData.data[0] || { breed: formatName },
         }
       } catch (error) {
         throw new Error('There was an issue fetching chosen dog breed data. Please try again later!');
