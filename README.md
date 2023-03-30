@@ -16,7 +16,7 @@ Yes, frontend side is using only one (1) following variable:
 REACT_APP_APOLLO_SERVER_URL=<your_backend_url_here>
 ```
 
-Variable value can look for example: `http://localhost:4000/`, where "4000" is the port number. Make sure that you are placing variable inside the `client` folder root and file has be saved as `.env.development`.
+Variable value can look for example: `http://localhost:4000/`, where "4000" is the port number. Make sure that you are placing variable inside the `client` folder root and file has to be saved as `.env.development`.
 
 Also in the backend side (`server` folder), you need two (2) following variables:
 
